@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            
+        <title>Methods</title> 
+            
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="../static/css/reset.css">
+            
+        <!-- Bootstrap CSS -->
+        <!--maybe take this first one out-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../static/css/styles.css">
+            
+        <!-- Bootstrap CDN Versions of jQuery and Popper -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> <!-- Dropdown Menu -->
+            
+        <!-- Specific Bootstrap Theme CSS -->
+        <link rel="stylesheet" href="../static/css/bootstrap-minty.css">
+            
+        <!-- Leaflet JS & CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
+            
+        <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+        integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+            
+        crossorigin=""></script>
+            
+        <!-- Leaflet Slider CSS -->
+        <!--below if necesarry-->
+        <!-- <link rel="stylesheet" type="text/css" href="../static/css/leaflet-slider.css"/>-->
+            
+            <!-- Custom CSS -->
+            <link rel="stylesheet" type="text/css" href="../static/css/style.css"/> 
+            
+        <!-- d3 JS -->
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+            
+        <!-- Marker Cluster JS & CSS -->
+        <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster@1.0.3/dist/leaflet.markercluster.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.css">
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.Default.css">
+        <style> img { display: block; margin-left: auto; margin-right: auto;}</style>
+    </head>
+
+<body>
+      <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top" id="navbar-narrow">
+        <a class="navbar-brand" href="#">
+            <a href="/"><img style="padding-right: 15px" src="../static/assets/smiles.png" width="60px" height="40px"></a>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            
+        <div class="collapse navbar-collapse"id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/method">METHOD</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/CodeNameKND14/World-Happiness" target="_blank">REPOSITORY</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+<div class="wrapper">
+    <div class="img smiles woodHappy text-left">
+        <h1 style="color: black";><strong>METHODOLOGY</strong></h1>
+    </div>
+    
+    <div class="container">
+
+        <!-- Goal & Discussion -->
+        <div class="row"><h2>GOAL</h2></div>
+        <div class="row">
+            <p style="font-size: 16px">Identify and visualize trends related to a country’s happiness score from the years ranging from 2015-2017 
+                on an interactive dashboard.</p>
+        </div>
+        <div class="row"><h2>CALCULATION OF DATA</h2></div>
+        <div class="row">
+            <h5>SCORE</h5>
+            <p style="font-size: 16px">
+                The happiness score is ranked from 0 – 10, 10 being the best possible life and 0 being the worst possible life. 
+                There are six factors used –  economic production, social support, life expectancy, freedom, trust in government, 
+                and generosity – that contribute to making life evaluations higher in each country than they are in Dystopia.
+
+            </p>
+            <h5>DYSTOPIA</h5>
+            <p>
+
+                Dystopia is a hypothetical society that is extremely undesirable, with the world’s least happy people,
+                whose countries values equal to the world’s lowest national averages for each of the 
+                six factors. This country acts as a benchmark against which all the other 
+                countries can be favorably compared. The lowest score observed for the six measurements characterizes Dystopia.
+
+            </p>
+            <h5>RESIDUALS</h5>
+            <p>
+                The Dystopia residuals are used to reflect the distance of the six factors for each country from Dystopia. 
+                The residuals are used to calculate the final happiness score so that the final evaluation will always be positive 
+                even if the six factors all equal 0. 
+                <br>
+                <br>
+                The original data can be viewed <a href="https://www.kaggle.com/unsdsn/world-happiness" target="_blank">here</a>. 
+                <br>
+            </p>
+        </div>
+        <div class="row"><h2>GATHERING DATA</h2></div>
+        <div class="row">
+            <p style="font-size: 16px">
+            For this project the original data was downloaded as a csv file from Kaggle. It was then cleaned using Python, inside Jupyter 
+            Notebook, and data wrangling techniques with relevant libraries such as Pandas. The data was then pushed to a 
+            Postgres database using SQLAlchemy. 
+            <br>
+            <br>
+            The newly cleaned csv files were taken and converted into a SQLite database for this project. 
+            SQLite proved as a more efficient connection as opposed to connecting directly to the Postgres database and 
+            remapping the tables. A flask app was built connecting the database to our JavaScript and HTML code.
+            </p>
+        
+        </div>
+        <div class="row"><h2>SYNOPSIS</h2></div>
+        <div class="row">
+            <br>
+            <h5>HAPPINESS SCORE VS. SIX VARIABLES</h5>
+            <p style="font-size: 16px">
+                Using <code>plotly.js</code>, a scatter plot was created. The plot helped illustrate how 
+                much gravity each variable held when compared to the 
+                happiness score.  Though each variable had a seemingly positive correlation, gdp, 
+                family, and life expectancy had the largest impact on how happy an individual 
+                felt throughout the three years. 
+            </p>
+            <br>
+  
+            <h5>AVG HAPPINESS SCORE BY REGION VS. POPULATION BY REGION</h5>
+            <p style="font-size: 16px">
+                    In order to take a closer look at population and its relationship 
+                    with the happiness score, a bar graph was made using <code>plotly.js</code>. 
+                    When first examining the chart and only looking at the highest happiness score 
+                    by region, lowest happiness score by region, and comparing that to its population, one can 
+                    see that there seems to be an inverse effect. However, when examining the 
+                    other happiness scores between the lowest and the highest, this conclusion 
+                    quickly demonstrates its inaccuracy. There does not seem to be a discernable trend concerning 
+                    these two variables. There is only a small amount of shift between both the 
+                    average happiness score and the population. This is due to the limited amount of 
+                    years being observed, ergo, we cannot make a confident statement about the 
+                    negative correlation between the average happiness score and population size. 
+                    <br>
+                    <br>
+            </p>
+        </div>
+        <div class="row"><h2>DISCUSSION</h2></div>
+        <div class="row">
+            <p style="font-size: 16px">
+                Our initial hypothesis was that there would be a meaningful and positive linear correlation 
+                between the variables gdp, life expectancy, and trust in government and that these variables would be  
+                the top three most impactful measurements for happiness score. Additioanlly, we believed that there would be a negative linear correlation between
+                population size and happiness score. We were correct on two of the measurements, 
+                however, our analysis illustrated that trust in government was the least impactful of all 
+                the variables and that there was no distinguishable trend between happiness and population. There may be several explanations for this, 
+                however, additional analysis would be needed. You can view each countries correlation coefficient between their happiness score and the six measured variables <a href= "/happinessCorr" target="_blank">here</a>. 
+                <br>
+                <br>
+                For a deeper examination of a countries happiness score, we would take a deeper dive into 
+                each individual variable to try and answer questions like: <i class="font-italic">Why did these variables 
+                have this specific effect on these countries? What do countries with different 
+                democracies have in common? How does a country with a high GDP per Capita decide 
+                to operate both locally and on a global scale? And how does that correlate with a countries happiness score?</i>                  
+            </p>
+        </div>
+    </div>
+    <footer class="footer bg-primary">
+        <div class="container bg-primary"><br>
+            <h3>Contributers</h3>
+            <p class="footer bg-primary" style="color: rgb(82, 81, 81)">
+                <strong>Kendall Jackson:</strong>   <a href="https://www.linkedin.com/in/kendall-jackson-3953159b/" style="color: #7c7c7c" target="_blank">LinkedIn</a>  |  <a href="https://github.com/CodeNameKND14" style="color: #7c7c7c" target="_blank">GitHub</a><br>
+                <strong>Adam Dunbar:</strong>   <a href="https://www.linkedin.com/in/adam-dunbar-b7897017/" style="color: #7c7c7c" target="_blank">LinkedIn</a>  |  <a href="https://github.com/Siderall" style="color: #7c7c7c" target="_blank">GitHub</a><br>
+                <strong>Teresa Ruan:</strong>   <a href="https://www.linkedin.com/in/teresa-r-38865912/" style="color: #7c7c7c" target="_blank">LinkedIn</a>  |  <a href="https://github.com/terisa1130" style="color: #7c7c7c" target="_blank">GitHub</a><br>
+            </p>
+        </div>
+    </footer>
+
+</div> <!-- Wrapper End -->
+
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+    crossorigin=""></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+
+</body>
+
+</html>
