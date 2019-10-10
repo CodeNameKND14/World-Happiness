@@ -1,0 +1,1 @@
+FLASK_APP=Happiness/app.py flask run
