@@ -16,8 +16,6 @@ Dystopia is a hypothetical society that is extremely undesirable, with the world
 ## RESIDUALS
 The Dystopia residuals are used to reflect the distance of the six factors for each country from Dystopia. The residuals are used to calculate the final happiness score so that the final evaluation will always be positive even if the six factors all equal 0.
 
-The original data can be viewed here.
-
 ## GATHERING DATA
 For this project the original data was downloaded as a csv file from Kaggle. It was then cleaned using Python, inside Jupyter Notebook, and data wrangling techniques with relevant libraries such as Pandas. The data was then pushed to a Postgres database using SQLAlchemy.
 
