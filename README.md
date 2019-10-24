@@ -4,7 +4,7 @@ Members: Adam Dunbar, Kendall Jackson, Teresa Ruan
 
 
 ## GOAL
-Identify and visualize trends related to a country’s happiness score from the years ranging from 2015-2017 on an interactive dashboard. You can view here[https://country-happiness.herokuapp.com/]
+Identify and visualize trends related to a country’s happiness score from the years ranging from 2015-2017 on an interactive dashboard. You can view [here](https://country-happiness.herokuapp.com/)
 
 # CALCULATION OF DATA
 ## SCORE
