@@ -24,7 +24,7 @@ The newly cleaned csv files were taken and converted into a SQLite database for 
 # SYNOPSIS
 
 ## HAPPINESS SCORE VS. SIX VARIABLES
-Using `plotly.js`, a scatter plot was created. The plot helped illustrate how much gravity each variable held when compared to the happiness score. Though each variable had a seemingly positive correlation, gdp, family, and life expectancy had the largest impact on how happy an individual felt throughout the three years.
+Using `plotly.js`, a scatter plot was created. The plot helped illustrate how much gravity each variable held when compared to the happiness score. Though each variable had a seemingly positive correlation, gdp, family, and life expectancy had the largest impact on how happy an individual felt throughout the three years. When comparing happiness to an objective metric like GDP we can see that generally, happier countries have a higher GDP.
 
 
 ## AVG HAPPINESS SCORE BY REGION VS. POPULATION BY REGION
@@ -34,3 +34,5 @@ In order to take a closer look at population and its relationship with the happi
 Our initial hypothesis was that there would be a meaningful and positive linear correlation between the variables gdp, life expectancy, and trust in government and that these variables would be the top three most impactful measurements for happiness score. Additioanlly, we believed that there would be a negative linear correlation between population size and happiness score. We were correct on two of the measurements, however, our analysis illustrated that trust in government was the least impactful of all the variables and that there was no distinguishable trend between happiness and population. There may be several explanations for this, however, additional analysis would be needed. You can view each countries correlation coefficient between their happiness score and the six measured variables [here](https://country-happiness.herokuapp.com/happinessCorr).
 
 For a deeper examination of a countries happiness score, we would take a deeper dive into each individual variable to try and answer questions like: Why did these variables have this specific effect on these countries? What do countries with different democracies have in common? How does a country with a high GDP per Capita decide to operate both locally and on a global scale? And how does that correlate with a countries happiness score?
+
+Information like this can be important for businesses wanting to better company moral, schools with low happiness trying to combat depression in students, and even parents when deciding how to raise a child. All in all, happiness is vital to our own goals in life and this analysis illustrates that it has a larger impact on our surrounding environment
