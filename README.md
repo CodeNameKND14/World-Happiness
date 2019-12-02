@@ -24,7 +24,7 @@ The newly cleaned csv files were taken and converted into a SQLite database for 
 # SYNOPSIS
 
 ## HAPPINESS SCORE VS. SIX VARIABLES
-Using `plotly.js`, a scatter plot was created. The plot helped illustrate how much gravity each variable held when compared to the happiness score. Though each variable had a seemingly positive correlation, gdp, family, and life expectancy had the largest impact on how happy an individual felt throughout the three years. When comparing happiness to an objective metric like GDP we can see that generally, happier countries have a higher GDP.
+Using `plotly.js`, a scatter plot was created. The plot helped illustrate how much gravity each variable held when compared to the happiness score. Though each variable had a seemingly positive correlation, gdp, family, and life expectancy had the largest impact on how happy an individual felt throughout the three years. When comparing happiness to a metric like GDP we can see that generally, happier countries have a higher GDP.
 
 
 ## AVG HAPPINESS SCORE BY REGION VS. POPULATION BY REGION
